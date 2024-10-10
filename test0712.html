@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Evaluater</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #b3e5fc; /* 青っぽい背景色 */
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 90%;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #0288d1; /* 青っぽい濃い色 */
+        }
+        .image-upload {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .image-upload input {
+            display: none;
+        }
+        .image-upload label {
+            padding: 10px 20px;
+            background-color: #0288d1; /* 青っぽい濃い色 */
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .image-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .image-container img {
+            max-width: 70%;
+            border-radius: 10px;
+        }
+        .buttons {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .buttons button {
+            padding: 10px 20px;
+            margin: 5px;
+            background-color: #0288d1; /* 青っぽい濃い色 */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .chat-box {
+            border: 2px solid #0288d1; /* 青っぽい濃い色 */
+            border-radius: 10px;
+            padding: 10px;
+            margin-bottom: 20px;
+            height: 300px;
+            overflow-y: scroll;
+            background-color: #e1f5fe; /* 青っぽい背景色 */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Photo Evaluater</h1>
+        <div class="image-upload">
+            <input type="file" id="image-input" accept="image/*">
+            <label for="image-input">画像を選択</label>
+        </div>
+        <div class="image-container" id="image-container"></div>
+        <div class="buttons">
+            <button id="evaluate-button" style="display:none;">評価</button>
+            <button id="retake-button" style="display:none;">撮りなおす</button>
+            <button id="complete-button" style="display:none;">完成</button>
+        </div>
+        <div class="chat-box" id="chat-box"></div>
+    </div>
+    <script src="test0718.js"></script>
+</body>
+</html>
