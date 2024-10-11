@@ -36,7 +36,7 @@ async function evaluateImage() {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
-                'Authorization': `Bearer sk-proj-hwsgrz4FbTc4XttJxBnWT3BlbkFJOw0t50mvtbRLWFTNVuwn` // ここにあなたのOpenAI APIキーを入力してください
+                'Authorization': `` // ここにあなたのOpenAI APIキーを入力してください
             },
             body: JSON.stringify({
                 model: 'gpt-4o', // もしくは使用したいモデル名
